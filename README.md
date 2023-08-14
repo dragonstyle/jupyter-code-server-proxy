@@ -1,8 +1,8 @@
-# jupyter-code-server-proxy
+# jupyter-codeserver-proxy
 
 This package was built using the [`jupyter-server-proxy` cookiecutter template](https://github.com/illumidesk/cookiecutter-jupyter-server-proxy).
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dragonstyle/jupyter-code-server-proxy/main?urlpath=code-server)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dragonstyle/jupyter-codeserver-proxy/main?urlpath=codeserver)
 
 ## Requirements
 
@@ -15,7 +15,7 @@ This package was built using the [`jupyter-server-proxy` cookiecutter template](
 - [Docker](https://docs.docker.com/get-docker/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
-This package executes the standard `code-server` command. This command assumes the `code-server` command is available in the environment's `PATH`. For convenience, the tests include cases that assert outputs when running the `code-server` command from a docker container. If you don't need to run tests with this setup running in a docker container, then remove the `tests/test_code-server_docker.py` file or comment out the code in the file.
+This package executes the standard `codeserver` command. This command assumes the `codeserver` command is available in the environment's `PATH`. For convenience, the tests include cases that assert outputs when running the `codeserver` command from a docker container. If you don't need to run tests with this setup running in a docker container, then remove the `tests/test_codeserver_docker.py` file or comment out the code in the file.
 
 ## Quick Starts
 
@@ -23,7 +23,7 @@ This package executes the standard `code-server` command. This command assumes t
 
 This test requires you to have a database instance available as a public endpoint or installed within the notebook container itself.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/illumidesk/jupyter-code-server-proxy/main?urlpath=code-server)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/illumidesk/jupyter-codeserver-proxy/main?urlpath=codeserver)
 
 ## The Hard Way
 
@@ -34,13 +34,13 @@ virtualenv -p python3 venv
 source venv/bin/activate
 ```
 
-### Install jupyter-code-server-proxy
+### Install jupyter-codeserver-proxy
 
 ```bash
-pip install git+https://github.com/dragonstyle/jupyter-code-server-proxy.git
+pip install git+https://github.com/dragonstyle/jupyter-codeserver-proxy.git
 ```
 
-### Enable jupyter-code-server-proxy Extensions
+### Enable jupyter-codeserver-proxy Extensions
 
 1. For Jupyter Classic, activate the `jupyter-server-proxy` extension:
 
@@ -57,7 +57,7 @@ jupyter lab build
 
 3. Start Jupyter Classic or Jupyter Lab
 
-4. Click on the `code-server` icon from the Jupyter Lab Launcher or the `code-server` item from the `New` dropdown in Jupyter Classic.
+4. Click on the `codeserver` icon from the Jupyter Lab Launcher or the `codeserver` item from the `New` dropdown in Jupyter Classic.
 
 ## Credits
 
