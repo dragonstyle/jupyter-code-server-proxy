@@ -7,8 +7,12 @@ echo https://github.com/coder/code-server/releases/download/v$CODE_VERSION/code-
 wget -q -O code-server.tar.gz https://github.com/coder/code-server/releases/download/v$CODE_VERSION/code-server-$CODE_VERSION-linux-amd64.tar.gz
 tar xzf code-server.tar.gz
 mkdir -p ~/.local/bin
-mv code-server${CODE_VERSON}-linux-x64/code-server ~/.local/bin/
-rm -rf code-server${CODE_VERSON}-linux-x64 code-server.tar.gz
+mv code-server${CODE_VERSON}-linux-x64 .code-server
+
+mkdir -p ./.local/bin
+ln -s ~/.quarto/bin/code-server ~/.local/bin/code-server
+
+rm -rf code-server.tar.gz
 
 # Enable the proxy extension in notebook and lab
 python3 -m pip install jupyter-server-proxy
