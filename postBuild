@@ -1,9 +1,10 @@
 
-#!/bin/bash
+#!/bin/bash -v
 
 # Download and install VS Code server
-CODE_VERSION=4.7.1
-wget -q -O code-server.tar.gz https://github.com/coder/code-server/releases/download/v$CODE_VERSION/code-server_${CODE_VERSION}_amd64.deb
+CODE_VERSION=4.16.1
+echo https://github.com/coder/code-server/releases/download/v$CODE_VERSION/code-server_${CODE_VERSION}_amd64.deb
+wget -q -O code-server.tar.gz https://github.com/coder/code-server/releases/download/v$CODE_VERSION/code-server-$CODE_VERSION-linux-amd64.tar.gz
 tar xzf code-server.tar.gz
 mkdir -p ~/.local/bin
 mv code-server${CODE_VERSON}-linux-x64/code-server ~/.local/bin/
