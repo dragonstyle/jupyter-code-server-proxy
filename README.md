@@ -23,7 +23,7 @@ This package executes the standard `codeserver` command. This command assumes th
 
 This test requires you to have a database instance available as a public endpoint or installed within the notebook container itself.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/illumidesk/jupyter-codeserver-proxy/main?urlpath=codeserver)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dragonstyle/jupyter-codeserver-proxy/main?urlpath=codeserver)
 
 ## The Hard Way
 
