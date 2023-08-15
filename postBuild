@@ -20,4 +20,4 @@ python3 -m pip install jupyter-server-proxy
 python3 -m pip install jupyter-vscode-proxy
 
 # start code-server
-code-server
+code-server &
