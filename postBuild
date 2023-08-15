@@ -18,3 +18,6 @@ rm -rf code-server.tar.gz
 # Enable the proxy extension in notebook and lab
 python3 -m pip install jupyter-server-proxy
 python3 -m pip install jupyter-vscode-proxy
+
+# start code-server
+code-server
